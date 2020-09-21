@@ -1,10 +1,9 @@
 <template>
   <v-container class="pa-16 pt-0 secondary--text">
     <v-row class="my-10" justify="center">
-      <div class="text-h3">About</div>
+      <div class="text-h3">Education</div>
     </v-row>
     <v-row class="my-10" justify="space-between">
-      <div class="text-h4 mb-5">Education</div>
       <div class="text-body-1">
         I am currently studying at <strong>University of Waterloo</strong> and completing my Bachelor in <strong>Computer Science</strong>. I will be graduating in summer of 2021. 
         Here are some of the courses I completed:
@@ -41,12 +40,6 @@
           <li>Vue JS 2, The Complete Guide (including Vue Router and Vuex).</li>
         </ul>
       </v-col>
-    </v-row>
-    <v-row>
-      <v-chip class="pa-6" color="primary" large>
-        Resumé
-        <v-icon right>mdi-download</v-icon>
-      </v-chip>
     </v-row>
   </v-container>
 </template>

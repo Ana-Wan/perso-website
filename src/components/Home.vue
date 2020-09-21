@@ -1,5 +1,5 @@
 <template>
-  <v-container class="px-16 secondary--text">
+  <v-container class="pa-16 pt-0 secondary--text">
     <v-row class="my-12 mx-15" justify="space-between" align="center" no-gutters>
       <v-col class="mt-10" lg="3" sm="12" xs="12">
         <img id="profileImg" src="../assets/me.png"/> 

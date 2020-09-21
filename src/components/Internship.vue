@@ -8,7 +8,7 @@
         lg="4"
         v-for="(internship, i) in internships"
         :key="i"
-        :left="i%2"
+        :left="i%2 ? true: false"
         color="primary"
         fill-dot
       >

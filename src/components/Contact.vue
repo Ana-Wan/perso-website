@@ -1,5 +1,5 @@
 <template>
-  <v-container class="pa-16 secondary--text">
+  <v-container class="pa-16 pt-0 secondary--text">
     <v-row class="ma-16" justify="center">
       <div class="text-h3">Contact Me</div>
     </v-row>

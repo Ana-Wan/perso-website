@@ -1,12 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
-import router from './router'
+import VueScrollactive from 'vue-scrollactive';
+import VueRouter from 'vue-router';
 
 Vue.config.productionTip = false
+Vue.use(VueScrollactive);
+
+const router = new VueRouter({
+  mode: 'history'
+})
 
 new Vue({
-  router,
   vuetify,
+  router,
   render: h => h(App)
 }).$mount('#app')
