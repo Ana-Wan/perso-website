@@ -1,16 +1,16 @@
 <template>
   <v-container class="pa-16 pt-0 secondary--text">
-    <v-row class="my-12 mx-15" justify="space-between" align="center" no-gutters>
+    <v-row class="my-10 mx-16" justify="space-between" align="center" no-gutters>
       <v-col class="mt-10" lg="3" sm="12" xs="12">
         <img id="profileImg" src="../assets/me.png"/> 
       </v-col>
       <v-col lg="9" sm="12" xs="12">
-        <div class="text-h2 mt-4">{{ title }}</div>
-        <div class="text-h4 mt-4">{{ position }}</div>
+        <div class="text-h3 mt-4">{{ title }}</div>
+        <div class="text-h5 mt-4">{{ position }}</div>
         <div class="text-body-1 mt-4"> {{ description }}</div>
       </v-col>
     </v-row>
-    <v-row class="my-12 mx-15" no-gutters>
+    <v-row class="my-12 mx-16" no-gutters>
       <v-col
         lg="3"
         sm="12"
@@ -30,13 +30,13 @@
         </a>
       </v-col>  
     </v-row>
-    <v-row class="mt-15 mb-10 mx-15" justify="space-between" align="center" no-gutters>
-      <v-col lg="2">
-        <v-icon class="pa-5" id="techStackIcon" color="secondary" large>mdi-layers-triple</v-icon>
+    <v-row class="my-10 mx-16" justify="space-between" align="center" no-gutters>
+      <v-col lg="1">
+        <v-icon class="pa-5" id="techStackIcon" color="secondary" medium>mdi-layers-triple</v-icon>
       </v-col>
       <v-col lg="10" sm="9" xs="9">
-        <div class="text-h4">Tech Stack</div>
-        <div class="text-body-1  mt-4">What I used and learned throughout my internships and projects</div>
+        <div class="text-h5">Tech Stack</div>
+        <div class="text-body-1 mt-2">What I used and learned throughout my internships and projects</div>
       </v-col>
     </v-row>
     <v-row class="mx-12" justify="space-between" align="center">
@@ -119,9 +119,9 @@
 <style lang="scss">
 #profileImg {
   position: relative;
-  height: 160px;
-  width: 160px;
-  border: 5px solid var(--v-primary-base);
+  height: 150px;
+  width: 150px;
+  border: 4px solid var(--v-primary-base);
   border-radius: 50%;
 }
 

@@ -4,10 +4,11 @@
       class="pl-4 chip white--text"
       :color="color"
       text-color="offWhite"
+      small
     >
 
       <v-avatar left>
-        <v-icon>{{ icon }}</v-icon>
+        <v-icon small>{{ icon }}</v-icon>
       </v-avatar>
       {{ text }}
     </v-chip>
@@ -37,20 +38,21 @@
 
 .chipLineDeco {
   position: absolute;
-  opacity: 30%;
   width: 8%;
-  height: 3px;
+  height: 2px;
   top: 50%;
-  background-color: #8A786D;
+  background-color: var(--v-tertiary-base);
 }
 
 .chipLineDeco1 {
   @extend .chipLineDeco;
+  opacity: 30%;
   left: 0;
 }
 
 .chipLineDeco2 {
   @extend .chipLineDeco;
+  opacity: 30%;
   right: 0;
 }
 

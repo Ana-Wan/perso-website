@@ -1,16 +1,16 @@
 <template>
   <v-app id="appContainer">
-    <v-navigation-drawer id="navDrawer" width="15%" floating color="secondary" app>
-      <div id="leftNavLineDeco1" > t</div>
+    <v-navigation-drawer width="15%" color="secondary" floating app>
+      <div id="leftNavLineDeco1"/>
       <div id="leftNavLineDeco2"/>
-      <v-list class="mt-12">
-        <scrollactive active-class="secondary" :offset="50" :scrollOffset="10" scrollContainerSelector="mainContainer" scrollOnStart modifyUrl exact>
-          <v-list-item
+      <scrollactive id="scrollative" active-class="secondary" :offset="50" :scrollOffset="-10" scrollContainerSelector="mainContainer" scrollOnStart modifyUrl exact>
+        <v-container id="leftNavContainer">
+          <v-row
             v-for="(info, index) in componentInfo"
             :key="index"
           >
             <v-btn
-              class="my-16 ml-10 scrollactive-item"
+              class="scrollactive-item"
               color="primary"
               height="50px"
               width="120px"
@@ -18,9 +18,9 @@
             >
               {{ info.name }}
             </v-btn>
-          </v-list-item>
-        </scrollactive>
-      </v-list>
+          </v-row>
+        </v-container>
+      </scrollactive>
     </v-navigation-drawer>
     
     <v-main id="mainContainer">
@@ -78,33 +78,38 @@ export default {
 
 <style lang="scss">
   #appContainer {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
   }
 
-  #navTopDeco {
-    width: 100px;
-    height: 100px;
-    z-index: 2;
+  .navLineDeco {
+    position: absolute;
+    opacity: 50%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--v-tertiary-base);
   }
 
   #leftNavLineDeco1 {
-    position: absolute;
-    opacity: 20%;
-    width: 2px;
-    height: 100%;
-    background-color: var(--v-tertiary-base);
+    @extend .navLineDeco;
     left: 35%;
-    z-index: 2;
   }
 
   #leftNavLineDeco2 {
-    position: absolute;
-    opacity: 20%;
-    width: 2px;
-    height: 100%;
-    background-color: var(--v-tertiary-base);
+    @extend .navLineDeco;
     left: 45%;
-    z-index: 2;
+  }
+
+  #scrollative {
+    height: 100%;
+  }
+
+  #leftNavContainer {
+    height: 100%;
+    margin-top: 30%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   #mainContainer {
