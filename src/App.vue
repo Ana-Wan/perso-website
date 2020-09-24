@@ -83,10 +83,9 @@ export default {
 
   .navLineDeco {
     position: absolute;
-    opacity: 50%;
     width: 2px;
     height: 100%;
-    background-color: var(--v-tertiary-base);
+    background-color: rgb(204, 197, 185, 0.2);
   }
 
   #leftNavLineDeco1 {

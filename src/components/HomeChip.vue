@@ -41,18 +41,16 @@
   width: 8%;
   height: 2px;
   top: 50%;
-  background-color: var(--v-tertiary-base);
+  background-color:  rgb(64, 61, 57, 0.3);
 }
 
 .chipLineDeco1 {
   @extend .chipLineDeco;
-  opacity: 30%;
   left: 0;
 }
 
 .chipLineDeco2 {
   @extend .chipLineDeco;
-  opacity: 30%;
   right: 0;
 }
 
