@@ -19,13 +19,15 @@
         :key="i"
         @click="() => handleInfoClick(info)"
       >
-        <HomeChip
-          :icon="info.icon"
-          :text="info.text"
-          :color="info.color"
-          :pos="i"
-          :numChips="persoLinkInfo.length"
-        />
+        <a :href="info.type == 'file' ? info.link : null" download>
+          <HomeChip
+            :icon="info.icon"
+            :text="info.text"
+            :color="info.color"
+            :pos="i"
+            :numChips="persoLinkInfo.length"
+          />
+        </a>
       </v-col>  
     </v-row>
     <v-row class="mt-15 mb-10 mx-15" justify="space-between" align="center" no-gutters>
@@ -66,14 +68,14 @@
           type:"file",
           text: "My Resumé",
           icon: "mdi-download",
-          link: "../files/resume.pdf",
+          link: "/files/resume.pdf",
           color: "primary"
         },
         {
           type:"github",
           text: "github.com/Ana-Wan",
           icon: "mdi-github",
-          link: "github.com/Ana-Wan", 
+          link: "https://www.github.com/Ana-Wan", 
           color: "#252A2E"
         },
         {
@@ -93,7 +95,7 @@
       ],
       techStackInfo: {
         "Backend": ["Node Js", "Python3", "C#", "Firebase"],
-        "Frontend": ["ReactJs/Hooks", "Vue Js", "Axios", ""],
+        "Frontend": ["ReactJs/ReactHooks", "Vue Js", "Angular Js", "Axios"],
         "Dev Tools": ["Google Cloud Platform", "Circle CI", "Terraform", "Git version control"]
       }
     }),
@@ -102,13 +104,7 @@
     handleInfoClick (info) {
       if (info.type == 'file') {
         console.log(info.link)
-        const blob = new Blob([info.link], { type: 'application/pdf' })
-        const url = window.URL.createObjectURL(blob)
-        const link = document.createElement('a')
-        link.href = url
-        link.setAttribute('download', "ana-wan-resume.pdf")
-        document.body.appendChild(link)
-        link.click()
+        
       } else if (info.type == 'email') {
         this.$emit('onScrollToComponent', 'contact')
       } else {

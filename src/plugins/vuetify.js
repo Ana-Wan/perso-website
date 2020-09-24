@@ -16,6 +16,7 @@ const opts = {
         offwhite: 'fffcf2',
         white: 'FFFFFF',
         error: '#E0707B',
+        success: "#85c987",
       },
     },
     options: {

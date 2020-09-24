@@ -36,15 +36,18 @@
         required
         outlined
       />
-      <v-btn
-        class="mx-16"
-        :disabled="!valid"
-        @click="sendEmail"
-        color="primary"
-        outlined
-      >
-        Send
-      </v-btn>
+      <div>
+        <v-btn
+          class="ml-16 mr-10"
+          :disabled="!valid"
+          @click="sendEmail"
+          color="primary"
+          outlined
+        >
+          Send
+        </v-btn>
+        <span :class="sendResult ? 'success--text': 'error--text'">{{ sendResultMsg }}</span>
+      </div>
     </v-form>
   </v-container>
 </template>
@@ -60,6 +63,8 @@
       senderName: "",
       senderEmail: "",
       senderMessage: "",
+      sendResultMsg: "",
+      sendResult: false,
       nameRules: [
         v => !!v || 'Name is required',
       ],
@@ -90,8 +95,12 @@
           emailjs.send(serviceId, templateId, templateParams, userId)
             .then((result) => {
                 console.log('SUCCESS!', result.status, result.text);
+                this.sendResultMsg = "Message successfully sent!" 
+                this.sendResult = true
             }, (error) => {
                 console.log('FAILED...', error);
+                this.sendResultMsg = "Error sending message!" 
+                this.sendResult = false
             });
         }
       }
