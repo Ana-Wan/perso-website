@@ -96,18 +96,21 @@ export default {
   }
 
   #leftNavLineDeco1 {
-    @extend .lineDeco;
+    position: absolute;
+    opacity: 20%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--v-tertiary-base);
     left: 35%;
   }
 
   #leftNavLineDeco2 {
-    @extend .lineDeco;
+    position: absolute;
+    opacity: 20%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--v-tertiary-base);
     left: 45%;
-  }
-
-  #rightLineDeco3 {
-    @extend .lineDeco;
-    right: 6%;
   }
 
   #mainContainer {
