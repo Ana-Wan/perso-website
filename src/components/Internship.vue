@@ -1,9 +1,9 @@
 <template>
   <v-container class="pa-16 pt-0  secondary--text">
     <v-row class="ma-10" justify="center">
-      <div class="text-h3">Internships</div>
+      <div class="text-h4">Internships</div>
     </v-row>
-    <v-timeline class="mt-10" reverse>
+    <v-timeline class="mt-10 mx-16" reverse>
       <v-timeline-item
         lg="4"
         v-for="(internship, i) in internships"
@@ -12,7 +12,7 @@
         color="primary"
         fill-dot
       >
-        <span slot="opposite" class="headline primary--text">{{ internship.time }}</span>
+        <span slot="opposite" class="text-h6 primary--text">{{ internship.time }}</span>
         <v-card color="primary" outlined rounded="lg">
           <v-card
             class="pa-2 pb-5"
@@ -20,18 +20,18 @@
             outlined
           >
             <v-card-title class="secondary--text">
-              <span class="text-h5 mr-1">{{ internship.companyName }}</span>
+              <span class="text-h6 mr-1">{{ internship.companyName }}</span>
               <v-btn :href="internship.companyLink" target="_blank" color="secondary" icon>
                 <v-icon small>mdi-open-in-new</v-icon>
               </v-btn>
             </v-card-title>
-            <v-card-subtitle class="text-body-1">{{ internship.position  }}</v-card-subtitle>
+            <v-card-subtitle class="text-body-2">{{ internship.position  }}</v-card-subtitle>
             <v-list>
               <v-list-item
                 v-for="(wo, j) in internship.workOverview"
                 :key="j"
               >
-                <v-list-item-content class="secondary--text">
+                <v-list-item-content class="secondary--text text-body-2">
                   {{ wo }}
                 </v-list-item-content>
               </v-list-item>
@@ -43,7 +43,7 @@
             border
             outlined
           >
-            <v-card-title class="secondary--text">
+            <v-card-title class="secondary--text text-body-1">
               Tech Stack
             </v-card-title>
             <v-list>
@@ -51,7 +51,7 @@
                 v-for="(progLang, j) in internship.techStack"
                 :key="j"
               >
-                <v-list-item-content class="secondary--text">
+                <v-list-item-content class="secondary--text text-body-2">
                   {{ progLang }}
                 </v-list-item-content>
               </v-list-item>
