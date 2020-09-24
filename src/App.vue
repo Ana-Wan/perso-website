@@ -1,7 +1,7 @@
 <template>
   <v-app id="appContainer">
     <v-navigation-drawer id="navDrawer" width="15%" floating color="secondary" app>
-      <div id="leftNavLineDeco1"/>
+      <div id="leftNavLineDeco1" > t</div>
       <div id="leftNavLineDeco2"/>
       <v-list class="mt-12">
         <scrollactive active-class="secondary" :offset="50" :scrollOffset="10" scrollContainerSelector="mainContainer" scrollOnStart modifyUrl exact>
@@ -86,14 +86,6 @@ export default {
     height: 100px;
     z-index: 2;
   }
-  
-  .lineDeco {
-    position: absolute;
-    opacity: 20%;
-    width: 2px;
-    height: 100%;
-    background-color: var(--v-tertiary-base);
-  }
 
   #leftNavLineDeco1 {
     position: absolute;
@@ -102,6 +94,7 @@ export default {
     height: 100%;
     background-color: var(--v-tertiary-base);
     left: 35%;
+    z-index: 2;
   }
 
   #leftNavLineDeco2 {
@@ -111,6 +104,7 @@ export default {
     height: 100%;
     background-color: var(--v-tertiary-base);
     left: 45%;
+    z-index: 2;
   }
 
   #mainContainer {
