@@ -65,10 +65,10 @@
       description: "I have over 3 years of software development experience in developing, testing and deploying web applications and backend servers. I completed 5 internships, both at startups and large companies.",
       persoLinkInfo: [
         {
-          type:"file",
+          type:"resume",
           text: "My Resumé",
           icon: "mdi-download",
-          link: "/files/resume.pdf",
+          link: "https://drive.google.com/file/d/1Wf6DqtgX_AcHXeCyEIIZUqM_L9HIMvLr/view?usp=sharing", 
           color: "primary"
         },
         {

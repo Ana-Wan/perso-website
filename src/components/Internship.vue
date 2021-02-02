@@ -72,7 +72,7 @@
         {
           companyName: "Shiftboard",
           companyLink: "https://www.shiftboard.com/employee-scheduling-software/schedulepro/",
-          time: "May 2020 - current",
+          time: "May 2020 - Dec 2020",
           position: "Software Developer",
           workDescription: "Implemented and tested backend APIs for SchedulePro's mobile application. Developed both frontend and backend features for the SchedulePro Web Application",
           workOverview: [
