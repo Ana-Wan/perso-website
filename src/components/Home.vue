@@ -68,7 +68,7 @@
           type:"resume",
           text: "My Resumé",
           icon: "mdi-download",
-          link: "https://drive.google.com/file/d/1Wf6DqtgX_AcHXeCyEIIZUqM_L9HIMvLr/view?usp=sharing", 
+          link: "https://docs.google.com/document/d/1Jzjt16JoHlNi2JKHhopjWIuz-_Vd6vxc1ktyeRTR0rM/edit?usp=sharing", 
           color: "primary"
         },
         {
