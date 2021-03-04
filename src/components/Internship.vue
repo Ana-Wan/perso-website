@@ -20,7 +20,7 @@
             outlined
           >
             <v-card-title class="secondary--text">
-              <span class="text-h6 mr-1">{{ internship.companyName }}</span>
+              <span class="text-h6">{{ internship.companyName }}</span>
               <v-btn :href="internship.companyLink" target="_blank" color="secondary" icon>
                 <v-icon small>mdi-open-in-new</v-icon>
               </v-btn>
