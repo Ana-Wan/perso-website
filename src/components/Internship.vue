@@ -70,7 +70,7 @@
     data: () => ({
       internships: [
         {
-          companyName: "Shiftboard",
+          companyName: "Shiftboard (SchedulePro Software)",
           companyLink: "https://www.shiftboard.com/employee-scheduling-software/schedulepro/",
           time: "May 2020 - Dec 2020",
           position: "Software Developer",
