@@ -2,7 +2,7 @@
   <v-container class="pa-16 pt-0 secondary--text">
     <v-row class="my-10 mx-16" justify="space-between" align="center" no-gutters>
       <v-col class="mt-10" lg="3" sm="12" xs="12">
-        <img id="profileImg" src="../assets/me.png"/> 
+        <img id="profileImg" src="../assets/me.jpg"/> 
       </v-col>
       <v-col lg="9" sm="12" xs="12">
         <div class="text-h3 mt-4">{{ title }}</div>
@@ -119,8 +119,8 @@
 <style lang="scss">
 #profileImg {
   position: relative;
-  height: 150px;
-  width: 150px;
+  height: 180px;
+  width: 180px;
   border: 4px solid var(--v-primary-base);
   border-radius: 50%;
 }
